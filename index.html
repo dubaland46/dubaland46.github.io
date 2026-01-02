@@ -182,6 +182,24 @@ section:not(.hero) {
 @media (max-width: 600px) {
   .hero h1 { font-size: 38px; }
 }
+  .map-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;  
+  height: 50px;
+  z-index: 9999;
+  transition: transform 0.3s;
+}
+
+.map-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.map-icon:hover {
+  transform: scale(1.2);
+}
 </style>
 </head>
 
