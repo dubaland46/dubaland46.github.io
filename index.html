@@ -169,7 +169,16 @@ footer {
   -webkit-backdrop-filter: blur(10px);
   border-radius: 12px 12px 0 0;
 }
-
+section:not(.hero) {
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 60px 30px;
+  margin: 40px auto;
+  max-width: 1200px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
 @media (max-width: 600px) {
   .hero h1 { font-size: 38px; }
 }
@@ -267,6 +276,7 @@ footer {
   <a href="https://www.instagram.com/motoroomcoffee" class="btn">Mesaj Gönder</a>
 </section>
 
+  
 <footer>
   <p>© Motoroom — Motor • Coffee • Music</p>
 </footer>
