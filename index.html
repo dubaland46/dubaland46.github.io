@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Motoroom | Motor • Coffee • Music</title>
+
+<style>
+:root {
+  --bg: #0b0b0b;
+  --card: #141414;
+  --text: #ffffff;
+  --muted: #b3b3b3;
+  --accent: #ff4a00;
+  --gold: #f5c542;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+section {
+  padding: 90px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+p { color: var(--muted); }
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 30px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,.75), #0b0b0b),
+    url('https://images.unsplash.com/photo-1511910849309-0f6f2c57c2c3') center/cover no-repeat;
+}
+
+.hero-box {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 54px;
+}
+
+.hero span {
+  color: var(--accent);
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+/* SECTIONS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.card {
+  background: var(--card);
+  padding: 35px;
+  border: 1px solid #222;
+}
+
+.card h3 {
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+/* QUOTES */
+.quote {
+  border-left: 3px solid var(--accent);
+  padding-left: 20px;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* INSTAGRAM */
+.ig {
+  background: linear-gradient(135deg, #ff4a00, #ff7a00);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.ig a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid #222;
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: 38px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-box">
+    <h1>MOTOR<span>OOM</span></h1>
+    <p>
+      Motor kültürü, kaliteli kahve, okey masaları ve güçlü bir sosyal atmosfer.
+      Burası sadece bir kafe değil — bir topluluk.
+    </p>
+    <a href="https://www.instagram.com/motoroomcoffee" class="btn">Instagram’dan İncele</a>
+  </div>
+</section>
+
+<!-- ATMOSFER -->
+<section>
+  <h2>Atmosfer</h2>
+  <p>
+    Motoroom; motorcuların, arkadaş gruplarının ve keyifli vakit arayanların
+    buluşma noktasıdır. İçeride sergilenen motorlar, rahat oturma alanları,
+    okey masaları ve enerjik müzikle günün temposunu değiştirir.
+  </p>
+</section>
+
+<!-- NEDEN -->
+<section>
+  <h2>Neden Motoroom?</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Motor Kültürü</h3>
+      <p>Gerçek motor ruhu, mekanın her köşesinde hissedilir.</p>
+    </div>
+    <div class="card">
+      <h3>Kahve & Atıştırmalık</h3>
+      <p>Lezzetli kahveler, keyifli sohbetlere eşlik eder.</p>
+    </div>
+    <div class="card">
+      <h3>Okey & Sosyal Alan</h3>
+      <p>Dostlarla oyun, muhabbet ve rahat bir ortam.</p>
+    </div>
+    <div class="card">
+      <h3>Samimi Hizmet</h3>
+      <p>Güleryüzlü ekip, sıcak ve doğal bir deneyim sunar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- YORUMLAR -->
+<section>
+  <h2>Misafir Deneyimleri</h2>
+
+  <div class="quote">
+    “Mekan ferah, kahveler çok lezzetli. Ortam gerçekten insanın içini açıyor.”
+  </div>
+
+  <div class="quote">
+    “Motorcular için harika bir yer. Samimi, sıcak ve keyifli.”
+  </div>
+
+  <div class="quote">
+    “Sohbet, oyun ve kaliteli vakit için ideal bir mekan.”
+  </div>
+</section>
+
+<!-- SEFFAFLIK -->
+<section>
+  <h2>Şeffaflık & Saygı</h2>
+  <p>
+    Motoroom’da misafir deneyimi önceliğimizdir.
+    Uygulamalarımız ve hizmet anlayışımız net, açık ve saygılıdır.
+    Amacımız herkesin keyifle vakit geçirmesidir.
+  </p>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="ig">
+  <h2>Motoroom’u Keşfet</h2>
+  <p>Güncel fotoğraflar, ortam ve etkinlikler</p>
+  <a href="https://www.instagram.com/motoroomcoffee">
+    instagram.com/motoroomcoffee
+  </a>
+</section>
+
+<!-- ZIYARET -->
+<section>
+  <h2>Bizi Ziyaret Edin</h2>
+  <p><strong>Adres:</strong> (Mekan adresi)</p>
+  <p><strong>Saatler:</strong> 10:00 – 01:00</p>
+  <a href="https://www.instagram.com/motoroomcoffee" class="btn">Mesaj Gönder</a>
+</section>
+
+<footer>
+  <p>© Motoroom — Motor • Coffee • Music</p>
+</footer>
+
+</body>
+</html>
