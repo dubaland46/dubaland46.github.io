@@ -155,10 +155,14 @@ p { color: var(--muted); }
 
 /* FOOTER */
 footer {
-  border-top: 1px solid #222;
+  border-top: 1px solid rgba(255,255,255,0.1);
   text-align: center;
   padding: 40px 20px;
-  color: var(--muted);
+  color: #b3b3b3;
+  background: rgba(20,20,20,0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px 12px 0 0;
 }
 
 @media (max-width: 600px) {
